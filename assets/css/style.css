@@ -311,8 +311,7 @@ article.active {
 \*-----------------------------------*/
 
 main {
-    margin: 15px 12px;
-    margin-bottom: 75px;
+    margin: 15px 12px 75px;
     min-width: 259px;
 }
 
@@ -611,10 +610,9 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 15px;
+    gap: 0 10px;
     margin: 0 -15px;
-    padding: 25px 15px;
-    padding-bottom: 35px;
+    padding: 25px 15px 35px;
     overflow-x: auto;
     scroll-behavior: smooth;
     overscroll-behavior-inline: contain;
@@ -624,10 +622,18 @@ main {
 .testimonials-item {
     scroll-snap-align: center;
     margin-top: 20px;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .testimonials-item {
+        flex: 0 0 49%;
+    }
 }
 
 .testimonials-avatar-box {
     position: absolute;
+    margin: 15px 15px 15px 15px;
     top: 0;
     left: 0;
     background: var(--white-1);
@@ -636,7 +642,8 @@ main {
 }
 
 .testimonials-item-title {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
+    margin-left: 90px;
 }
 
 .testimonials-text {
@@ -649,7 +656,7 @@ main {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 
 
@@ -1448,8 +1455,6 @@ textarea.form-input::-webkit-resizer {
 
     .testimonials-list {
         gap: 0 10px;
-        /*margin: 0 -30px;*/
-        /*padding: 30px 30px 35px;*/
     }
 
     .content-card {
@@ -1461,11 +1466,6 @@ textarea.form-input::-webkit-resizer {
         margin: 15px 15px 15px 15px;
     }
 
-    .testimonials-avatar-box img {
-        width: 80px;
-        padding: 5px;
-    }
-
     .testimonials-item-title {
         margin-bottom: 10px;
         margin-left: 80px;
@@ -1474,6 +1474,7 @@ textarea.form-input::-webkit-resizer {
     .testimonials-text {
         line-clamp: 2;
         -webkit-line-clamp: 2;
+        margin-left: 80px;
     }
 
     /* testimonials modal */
@@ -1780,8 +1781,6 @@ textarea.form-input::-webkit-resizer {
 
     /* testimonials */
     .testimonials-item {
-        /*min-width: calc(50% - 15px);*/
-        /*width: 30%;*/
         flex: 0 0 32%;
     }
 
@@ -1960,4 +1959,9 @@ textarea.form-input::-webkit-resizer {
 .hidden_modal_data {
     visibility: hidden;
     display: none;
+}
+
+.testimonials-avatar-box img {
+    width: 80px;
+    padding: 5px;
 }

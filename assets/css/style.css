@@ -527,11 +527,17 @@ main {
     margin-bottom: 15px;
 }
 
+.portfolio-text {
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+}
+
 
 /**
  * #service 
  */
-
 .service {
     margin-bottom: 35px;
 }
@@ -601,6 +607,7 @@ main {
 }
 
 .testimonials-list {
+    flex-wrap: wrap;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -615,16 +622,15 @@ main {
 }
 
 .testimonials-item {
-    min-width: 100%;
     scroll-snap-align: center;
+    margin-top: 20px;
 }
 
 .testimonials-avatar-box {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(15px, -25px);
-    background: var(--bg-gradient-onyx);
+    background: var(--white-1);
     border-radius: 14px;
     box-shadow: var(--shadow-1);
 }
@@ -643,6 +649,7 @@ main {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-left: 80px;
 }
 
 
@@ -740,7 +747,7 @@ main {
 }
 
 .modal-avatar-box {
-    background: var(--bg-gradient-onyx);
+    background: var(--white-1);
     width: max-content;
     border-radius: 14px;
     margin-bottom: 15px;
@@ -1440,29 +1447,28 @@ textarea.form-input::-webkit-resizer {
     }
 
     .testimonials-list {
-        gap: 30px;
-        margin: 0 -30px;
-        padding: 30px;
-        padding-bottom: 35px;
+        gap: 0 10px;
+        /*margin: 0 -30px;*/
+        /*padding: 30px 30px 35px;*/
     }
 
     .content-card {
-        padding: 30px;
-        padding-top: 25px;
+        padding: 10px 15px 10px 25px;
     }
 
     .testimonials-avatar-box {
-        transform: translate(30px, -30px);
         border-radius: 20px;
+        margin: 15px 15px 15px 15px;
     }
 
     .testimonials-avatar-box img {
         width: 80px;
+        padding: 5px;
     }
 
     .testimonials-item-title {
         margin-bottom: 10px;
-        margin-left: 95px;
+        margin-left: 80px;
     }
 
     .testimonials-text {
@@ -1497,6 +1503,7 @@ textarea.form-input::-webkit-resizer {
 
     .modal-avatar-box img {
         width: 65px;
+        padding: 5px;
     }
 
     .modal-img-wrapper > img {
@@ -1637,7 +1644,6 @@ textarea.form-input::-webkit-resizer {
         width: 80px;
     }
 
-
     /**
      * PORTFOLIO
      */
@@ -1774,7 +1780,9 @@ textarea.form-input::-webkit-resizer {
 
     /* testimonials */
     .testimonials-item {
-        min-width: calc(50% - 15px);
+        /*min-width: calc(50% - 15px);*/
+        /*width: 30%;*/
+        flex: 0 0 32%;
     }
 
     /* clients */
@@ -1947,4 +1955,9 @@ textarea.form-input::-webkit-resizer {
 .resume-link:hover {
     text-decoration: underline;
     color: var(--orange-yellow-crayola);
+}
+
+.hidden_modal_data {
+    visibility: hidden;
+    display: none;
 }

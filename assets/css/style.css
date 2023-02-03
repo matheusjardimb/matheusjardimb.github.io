@@ -117,7 +117,7 @@ li {
     list-style: none;
 }
 
-img, ion-icon, a, button, time, span {
+img, ion-icon, button, time, span {
     display: block;
 }
 
@@ -288,8 +288,7 @@ article.active {
 .content-card {
     position: relative;
     background: var(--border-gradient-onyx);
-    padding: 15px;
-    padding-top: 45px;
+    padding: 15px 15px 15px;
     border-radius: 14px;
     box-shadow: var(--shadow-2);
     cursor: pointer;
@@ -427,6 +426,8 @@ main {
 .contact-info {
     max-width: calc(100% - 46px);
     width: calc(100% - 46px);
+    overflow: hidden;
+    color: var(--white-2);
 }
 
 .contact-title {
@@ -623,11 +624,13 @@ main {
     scroll-snap-align: center;
     margin-top: 20px;
     flex: 0 0 100%;
+    max-width: 100%;
 }
 
 @media (min-width: 768px) {
     .testimonials-item {
         flex: 0 0 49%;
+        max-width: 49%;
     }
 }
 
@@ -1398,6 +1401,9 @@ textarea.form-input::-webkit-resizer {
     }
 
     .contact-info {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--white-2);
         max-width: calc(100% - 64px);
         width: calc(100% - 64px);
     }
@@ -1782,6 +1788,7 @@ textarea.form-input::-webkit-resizer {
     /* testimonials */
     .testimonials-item {
         flex: 0 0 32%;
+        max-width: 32%;
     }
 
     /* clients */

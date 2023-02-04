@@ -24,6 +24,7 @@ const overlay = document.querySelector("[data-overlay]");
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
+const modalDate = document.querySelector("[data-modal-date]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
@@ -38,9 +39,9 @@ for (const element of testimonialsItem) {
         modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
         modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
         modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+        modalDate.innerHTML = this.querySelector("[data-testimonials-date]").innerHTML;
         testimonialsModalFunc();
     });
-
 }
 
 // add click event to modal close button
@@ -89,9 +90,7 @@ const filterFunc = function (selectedValue) {
 let lastClickedBtn = filterBtn[0];
 
 for (const element of filterBtn) {
-
     element.addEventListener("click", function () {
-
         let selectedValue = this.innerText.toLowerCase();
         selectValue.innerText = this.innerText;
         filterFunc(selectedValue);

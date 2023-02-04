@@ -126,10 +126,6 @@ img, ion-icon, button, time, span {
     display: block;
 }
 
-/*ion-icon:hover {*/
-/*    color: var(--orange-yellow-crayola);*/
-/*}*/
-
 button {
     font: inherit;
     background: none;
@@ -443,7 +439,6 @@ main {
 }
 
 .contact-info :is(.contact-link, time, address) {
-    /*color: var(--white-2);*/
     font-size: var(--fs-7);
 }
 

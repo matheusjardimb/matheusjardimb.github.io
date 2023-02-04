@@ -1,11 +1,6 @@
-name: CSS
+name: Lint CSS and JS files
 
-on:
-  push:
-    branches-ignore:
-      - "dependabot/**"
-  pull_request:
-  workflow_dispatch:
+on: [ pull_request ]
 
 env:
   FORCE_COLOR: 2
@@ -33,7 +28,8 @@ jobs:
       - name: Install npm dependencies
         run: npm install --dev
 
-      - name: Build CSS
-        run: |
-          npx prettier --check "**/*.js"
+      - name: Lint JS files
+        run: npx prettier --check "**/*.js"
+
+      - name: Lint CSS files
           npx prettier --check "**/*.css"

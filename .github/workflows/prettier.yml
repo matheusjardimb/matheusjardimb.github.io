@@ -1,4 +1,4 @@
-name: Lint CSS and JS files
+name: Lint HTML, CSS and JS files
 
 on: [ pull_request ]
 
@@ -9,7 +9,7 @@ env:
 jobs:
   linting:
     runs-on: ubuntu-latest
-    name: Checking lint on CSS and JS files
+    name: Checking lint on HTML, CSS and JS files
     steps:
       - uses: actions/checkout@v3
 
@@ -22,8 +22,11 @@ jobs:
       - name: Install npm dependencies
         run: npm install --dev
 
-      - name: Lint JS files
-        run: npx prettier --check "**/*.js"
+      - name: Lint HTML files
+        run: npx prettier --check "**/*.html"
 
       - name: Lint CSS files
         run: npx prettier --check "**/*.css"
+
+      - name: Lint JS files
+        run: npx prettier --check "**/*.js"

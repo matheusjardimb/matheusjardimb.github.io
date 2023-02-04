@@ -1,619 +1,791 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matheus Jardim B. - Personal page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Matheus Jardim B. - Personal page" />
 
     <title>Matheus Jardim B.</title>
 
     <!-- OpenGraph -->
-    <meta property="og:title" content="Matheus Jardim B. - Senior Software Engineer"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://matheusjardimb.com/"/>
-    <meta property="og:image" content="https://matheusjardimb.com/assets/images/my-avatar.png"/>
+    <meta
+      property="og:title"
+      content="Matheus Jardim B. - Senior Software Engineer"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://matheusjardimb.com/" />
+    <meta
+      property="og:image"
+      content="https://matheusjardimb.com/assets/images/my-avatar.png"
+    />
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/site.webmanifest" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Google Font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-<!-- #MAIN -->
-<main>
-    <!-- #SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
+  <body>
+    <!-- #MAIN -->
+    <main>
+      <!-- #SIDEBAR -->
+      <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
-            <figure class="avatar-box">
-                <img src="./assets/images/my-avatar.png" alt="Matheus Jardim B." width="80">
-            </figure>
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Matheus Jardim B."
+              width="80"
+            />
+          </figure>
 
-            <div class="info-content">
-                <h1 class="name" title="Matheus Jardim B.">Matheus Jardim B.</h1>
-                <p class="title">
-                    Senior Software Engineer
-                </p>
-            </div>
-            <button class="info_more-btn" data-sidebar-btn>
-                <span>Show Contacts</span>
-                <ion-icon name="chevron-down"></ion-icon>
-            </button>
+          <div class="info-content">
+            <h1 class="name" title="Matheus Jardim B.">Matheus Jardim B.</h1>
+            <p class="title">Senior Software Engineer</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
         <div class="sidebar-info_more">
-            <div class="separator"></div>
-            <ul class="contacts-list">
-                <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </div>
-                    <div class="contact-info">
-                        <p class="contact-title">Email</p>
-                        <a href="mailto:matheusjardimb@gmail.com" title="matheusjardimb@gmail.com" class="contact-link">matheusjardimb@gmail.com</a>
-                    </div>
-                </li>
-                <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="phone-portrait-outline"></ion-icon>
-                    </div>
-                    <div class="contact-info">
-                        <p class="contact-title">Phone</p>
-                        <a href="tel:+5551992237820" class="contact-link">+55 (51) 99223-7820</a>
-                    </div>
-                </li>
-                <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="calendar-outline"></ion-icon>
-                    </div>
-                    <div class="contact-info">
-                        <p class="contact-title">Birthday</p>
-                        <time datetime="1991-07-24">July 24, 1991</time>
-                    </div>
-                </li>
-                <li class="contact-item">
-                    <div class="icon-box">
-                        <ion-icon name="location-outline"></ion-icon>
-                    </div>
-                    <div class="contact-info">
-                        <p class="contact-title">Location</p>
-                        <address>Porto Alegre, RS, Brazil</address>
-                    </div>
-                </li>
-            </ul>
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a
+                  href="mailto:matheusjardimb@gmail.com"
+                  title="matheusjardimb@gmail.com"
+                  class="contact-link"
+                  >matheusjardimb@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+5551992237820" class="contact-link"
+                  >+55 (51) 99223-7820</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="1991-07-24">July 24, 1991</time>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Porto Alegre, RS, Brazil</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="separator"></div>
+          <div class="separator"></div>
 
-            <ul class="social-list">
-                <li class="social-item">
-                    <a target="_blank" href="https://facebook.com/matheusjardimb" class="social-link">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a target="_blank" href="https://www.linkedin.com/in/matheusjardimb/" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a target="_blank" href="https://github.com/matheusjardimb" class="social-link">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a target="_blank" href="https://stackoverflow.com/users/1239006/matheusjardimb"
-                       class="social-link">
-                        <ion-icon name="logo-stackoverflow"></ion-icon>
-                    </a>
-                </li>
-            </ul>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                target="_blank"
+                href="https://facebook.com/matheusjardimb"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/matheusjardimb/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                target="_blank"
+                href="https://github.com/matheusjardimb"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                target="_blank"
+                href="https://stackoverflow.com/users/1239006/matheusjardimb"
+                class="social-link"
+              >
+                <ion-icon name="logo-stackoverflow"></ion-icon>
+              </a>
+            </li>
+          </ul>
         </div>
-    </aside>
+      </aside>
 
-    <!-- #main-content -->
-    <div class="main-content">
+      <!-- #main-content -->
+      <div class="main-content">
         <!-- #NAVBAR -->
         <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="navbar-item">
-                    <button class="navbar-link active" data-nav-link>About</button>
-                </li>
-                <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>Resume</button>
-                </li>
-            </ul>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+          </ul>
         </nav>
 
         <!-- #ABOUT -->
-        <article class="about  active" data-page="about">
-            <header>
-                <h2 class="h2 article-title">About me</h2>
-            </header>
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-            <section class="about-text">
-                <p>
-                    I'm a senior Software Engineer from Porto Alegre, Brazil, developing solutions for the web.
+          <section class="about-text">
+            <p>
+              I'm a senior Software Engineer from Porto Alegre, Brazil,
+              developing solutions for the web. I have the privilege to dedicate
+              my time to helping our customer's projects impact thousands of
+              people daily.
+            </p>
+            <p>
+              Over the past few years, I've faced distinct endeavors, such as
+              <b
+                >web and mobile development, deployment of SaaS infrastructures,
+                backend engineering, project management and technical
+                leadership.</b
+              >
+            </p>
+          </section>
 
-                    I have the privilege to dedicate my time to helping our customer's projects impact thousands of
-                    people daily.
-                </p>
-                <p>
-                    Over the past few years, I've faced distinct endeavors, such as <b>web and mobile development,
-                    deployment of SaaS infrastructures, backend engineering, project management and technical
-                    leadership.</b>
-                </p>
+          <section class="testimonials">
+            <h3 class="h3 service-title">Portfolio</h3>
+            <section class="portfolio-text">
+              <p>
+                These are some fantastic companies I had the pleasure of working
+                with within the past few years.
+              </p>
             </section>
-
-            <section class="testimonials">
-                <h3 class="h3 service-title">Portfolio</h3>
-                <section class="portfolio-text">
+            <ul class="testimonials-list">
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_hp.png"
+                      alt="HP"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4 class="h4 testimonials-item-title">HP</h4>
+                  <span class="hidden_modal_data" data-testimonials-title
+                    >Hewlett Packard</span
+                  >
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2010 - 2014, 2022 - Present</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
                     <p>
-                        These are some fantastic companies I had the pleasure of working with within the past few years.
+                      Currently acting as the <b>technical leader</b> of an R&D
+                      initiative regarding mobile development, as a remote
+                      outsourcer.
                     </p>
-                </section>
-                <ul class="testimonials-list">
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_hp.png" alt="HP" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title">HP</h4>
-                            <span class="hidden_modal_data" data-testimonials-title>Hewlett Packard</span>
-                            <span class="hidden_modal_data" data-testimonials-date>2010 - 2014, 2022 - Present</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Currently acting as the <b>technical leader</b> of an R&D initiative regarding
-                                    mobile development, as a remote outsourcer.
-                                </p>
-                                <p>
-                                    I have also previously worked at HP as an <b>employee for four years</b> of
-                                    recurrent personal recognition. I have rapidly evolved from an intern to the
-                                    <b>technical leader of a 10+ people team</b> globally distributed, coordinating an
-                                    <b>Android app with 25+ million downloads</b> at that moment.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                      I have also previously worked at HP as an
+                      <b>employee for four years</b> of recurrent personal
+                      recognition. I have rapidly evolved from an intern to the
+                      <b>technical leader of a 10+ people team</b> globally
+                      distributed, coordinating an
+                      <b>Android app with 25+ million downloads</b> at that
+                      moment.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_globo.png" alt="Globo" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Globo</h4>
-                            <span class="hidden_modal_data" data-testimonials-date>2017 - 2018, 2021 - Present</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Performed as a <b>technical leader and manager</b> of the first project with this
-                                    customer. This initiative comprised the R&D of an Android app, gathering user data
-                                    for academic research.
-                                </p>
-                                <p>
-                                    On the second occasion, I act again as the <b>technical leader and project
-                                    manager</b> covering the development and maintenance of highly popular web
-                                    applications that are accessed thousands of times daily.
-                                </p>
-                                <p>
-                                    My team was performing as remote outsourcing in both projects.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_globo.png"
+                      alt="Globo"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Globo
+                  </h4>
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2017 - 2018, 2021 - Present</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Performed as a <b>technical leader and manager</b> of the
+                      first project with this customer. This initiative
+                      comprised the R&D of an Android app, gathering user data
+                      for academic research.
+                    </p>
+                    <p>
+                      On the second occasion, I act again as the
+                      <b>technical leader and project manager</b> covering the
+                      development and maintenance of highly popular web
+                      applications that are accessed thousands of times daily.
+                    </p>
+                    <p>
+                      My team was performing as remote outsourcing in both
+                      projects.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_epson.png" alt="Epson" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Epson</h4>
-                            <span class="hidden_modal_data" data-testimonials-date>2021 - 2022</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Contributed as a <b>technical leader and project manager</b> while building this LMS
-                                    web platform.
-                                </p>
-                                <p>
-                                    This project supported a variety of media types, complete CMS features, and had its
-                                    data backed up into a proprietary <b>blockchain</b> solution for immutability.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_epson.png"
+                      alt="Epson"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Epson
+                  </h4>
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2021 - 2022</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Contributed as a
+                      <b>technical leader and project manager</b> while building
+                      this LMS web platform.
+                    </p>
+                    <p>
+                      This project supported a variety of media types, complete
+                      CMS features, and had its data backed up into a
+                      proprietary <b>blockchain</b> solution for immutability.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_mitsubishi.png" alt="Mitsubishi" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Mitsubishi</h4>
-                            <span class="hidden_modal_data" data-testimonials-date>2018 - 2019</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Acted as a <b>technical leader and manager</b> of this project, which my team
-                                    contributed as a remote outsourced resource.
-                                </p>
-                                <p>
-                                    The delivery consisted of a web <b>LMS platform</b> to be used by hundreds of the
-                                    customer's employees countrywide.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_mitsubishi.png"
+                      alt="Mitsubishi"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mitsubishi
+                  </h4>
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2018 - 2019</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Acted as a <b>technical leader and manager</b> of this
+                      project, which my team contributed as a remote outsourced
+                      resource.
+                    </p>
+                    <p>
+                      The delivery consisted of a web <b>LMS platform</b> to be
+                      used by hundreds of the customer's employees countrywide.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_rocketchat.png" alt="Rocket.Chat" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Rocket.Chat</h4>
-                            <span class="hidden_modal_data" data-testimonials-date>2018</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Worked on this project as a <b>freelancer developer</b>, solving issues and
-                                    developing features on the original native Android app.
-                                </p>
-                                <p>
-                                    The RocketChat team recently decided to archive the native app
-                                    (https://github.com/RocketChat/Rocket.Chat.Android) and adopt React Native instead.
-                                </p>
-                                <p>
-                                    This app contained significant communication complexity due to its nature of being a
-                                    chat platform. Also, the project required constant communication with team members
-                                    collaborating from across the globe.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_rocketchat.png"
+                      alt="Rocket.Chat"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Rocket.Chat
+                  </h4>
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2018</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Worked on this project as a <b>freelancer developer</b>,
+                      solving issues and developing features on the original
+                      native Android app.
+                    </p>
+                    <p>
+                      The RocketChat team recently decided to archive the native
+                      app (https://github.com/RocketChat/Rocket.Chat.Android)
+                      and adopt React Native instead.
+                    </p>
+                    <p>
+                      This app contained significant communication complexity
+                      due to its nature of being a chat platform. Also, the
+                      project required constant communication with team members
+                      collaborating from across the globe.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_cambridge.png" alt="Cambridge University" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title">Cambridge</h4>
-                            <span class="hidden_modal_data" data-testimonials-title>Cambridge University</span>
-                            <span class="hidden_modal_data" data-testimonials-date>2017 - 2018</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Worked on this project as an outsourced developer, responsible for developing
-                                    features on the Android app and for managing other team members of my company.
-                                </p>
-                                <p>
-                                    The app called "Quiz your English by Cambridge University" is no longer available at
-                                    the Google Play Store, and it relied on many gamification mechanisms for engaging
-                                    users in learning activities.
-                                </p>
-                                <p>
-                                    The game app contained many animations and required intense communication with a
-                                    backend server for receiving content and updating user progress.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_cambridge.png"
+                      alt="Cambridge University"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4 class="h4 testimonials-item-title">Cambridge</h4>
+                  <span class="hidden_modal_data" data-testimonials-title
+                    >Cambridge University</span
+                  >
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2017 - 2018</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Worked on this project as an outsourced developer,
+                      responsible for developing features on the Android app and
+                      for managing other team members of my company.
+                    </p>
+                    <p>
+                      The app called "Quiz your English by Cambridge University"
+                      is no longer available at the Google Play Store, and it
+                      relied on many gamification mechanisms for engaging users
+                      in learning activities.
+                    </p>
+                    <p>
+                      The game app contained many animations and required
+                      intense communication with a backend server for receiving
+                      content and updating user progress.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_tique_taque.png"
-                                     alt="TiqueTaque App" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title">TiqueTaque</h4>
-                            <span class="hidden_modal_data" data-testimonials-title>
-                                TiqueTaque App
-                            </span>
-                            <span class="hidden_modal_data" data-testimonials-date>2017 - 2018</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    Responsible for maintaining their two Android apps, which are used by hundreds of
-                                    employees for managing working hours information.
-                                </p>
-                                <p>
-                                    The company offers a solution with its own physical device for logging working hours
-                                    by gathering fingerprints. I made the initial version and later maintained the
-                                    <b>Android app</b> capable of connecting with this <b>IoT</b> for setting it up.
-                                </p>
-                                <p>
-                                    Also maintained the employee-targeted app responsible for registering working hours
-                                    and paid leaves.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_tique_taque.png"
+                      alt="TiqueTaque App"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4 class="h4 testimonials-item-title">TiqueTaque</h4>
+                  <span class="hidden_modal_data" data-testimonials-title>
+                    TiqueTaque App
+                  </span>
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2017 - 2018</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Responsible for maintaining their two Android apps, which
+                      are used by hundreds of employees for managing working
+                      hours information.
+                    </p>
+                    <p>
+                      The company offers a solution with its own physical device
+                      for logging working hours by gathering fingerprints. I
+                      made the initial version and later maintained the
+                      <b>Android app</b> capable of connecting with this
+                      <b>IoT</b> for setting it up.
+                    </p>
+                    <p>
+                      Also maintained the employee-targeted app responsible for
+                      registering working hours and paid leaves.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_google.png"
-                                     alt="PLP 2.0 - Google Social Impact Award Winner" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title">
-                                Google Award
-                            </h4>
-                            <span class="hidden_modal_data" data-testimonials-title>
-                                Google Social Impact Awards
-                            </span>
-                            <span class="hidden_modal_data" data-testimonials-date>2014 - 2016</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    This initiative to combat women's domestic violence won first prize at the <b>Google
-                                    Social Impact Award</b> 2014, competing among 700+ candidates.
-                                </p>
-                                <p>
-                                    The solution mainly consisted of an app with a panic button triggered by repeatedly
-                                    pressing the phone's power button. This discreet mechanism immediately warns public
-                                    security agents by sending the victim's information, thus quickening the urgent
-                                    assistance.
-                                </p>
-                                <p>
-                                    I was the main developer of the team, <b>responsible for the Android app
-                                    development</b> and validation of server features. I worked on it ever since the
-                                    creation of the very first proof of concept and later supported updates in the
-                                    upcoming years.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_google.png"
+                      alt="PLP 2.0 - Google Social Impact Award Winner"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4 class="h4 testimonials-item-title">Google Award</h4>
+                  <span class="hidden_modal_data" data-testimonials-title>
+                    Google Social Impact Awards
+                  </span>
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2014 - 2016</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      This initiative to combat women's domestic violence won
+                      first prize at the <b>Google Social Impact Award</b> 2014,
+                      competing among 700+ candidates.
+                    </p>
+                    <p>
+                      The solution mainly consisted of an app with a panic
+                      button triggered by repeatedly pressing the phone's power
+                      button. This discreet mechanism immediately warns public
+                      security agents by sending the victim's information, thus
+                      quickening the urgent assistance.
+                    </p>
+                    <p>
+                      I was the main developer of the team,
+                      <b>responsible for the Android app development</b> and
+                      validation of server features. I worked on it ever since
+                      the creation of the very first proof of concept and later
+                      supported updates in the upcoming years.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-                    <div class="testimonials-item">
-                        <div class="content-card" data-testimonials-item>
-                            <figure class="testimonials-avatar-box">
-                                <img src="./assets/images/company_mandae.png" alt="Mandaê" width="60"
-                                     data-testimonials-avatar>
-                            </figure>
-                            <h4 class="h4 testimonials-item-title" data-testimonials-title>Mandaê</h4>
-                            <span class="hidden_modal_data" data-testimonials-date>2014 - 2015</span>
-                            <div class="testimonials-text" data-testimonials-text>
-                                <p>
-                                    This rapidly-growing startup provides logistics solutions by heavily depending on
-                                    software to automate daily routines.
-                                </p>
-                                <p>
-                                    Worked on this project throughout 2014 as a <b>fully-remote Android developer</b>,
-                                    responsible for their two mobile apps.
-                                </p>
-                                <p>
-                                    Their solution consists of an end-consumer app used to manage shipping orders, and a
-                                    second app targeted at internal use only for package handling.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
+              <div class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/company_mandae.png"
+                      alt="Mandaê"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mandaê
+                  </h4>
+                  <span class="hidden_modal_data" data-testimonials-date
+                    >2014 - 2015</span
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      This rapidly-growing startup provides logistics solutions
+                      by heavily depending on software to automate daily
+                      routines.
+                    </p>
+                    <p>
+                      Worked on this project throughout 2014 as a
+                      <b>fully-remote Android developer</b>, responsible for
+                      their two mobile apps.
+                    </p>
+                    <p>
+                      Their solution consists of an end-consumer app used to
+                      manage shipping orders, and a second app targeted at
+                      internal use only for package handling.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/company_hp.png"
+                    alt="Customer"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+              </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title></h4>
+                <time data-modal-date></time>
+                <div data-modal-text>
+                  <p>TODO</p>
+                </div>
+              </div>
             </section>
-
-            <div class="modal-container" data-modal-container>
-                <div class="overlay" data-overlay></div>
-                <section class="testimonials-modal">
-                    <button class="modal-close-btn" data-modal-close-btn>
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                    <div class="modal-img-wrapper">
-                        <figure class="modal-avatar-box">
-                            <img src="./assets/images/company_hp.png" alt="Customer" width="80" data-modal-img>
-                        </figure>
-                    </div>
-                    <div class="modal-content">
-                        <h4 class="h3 modal-title" data-modal-title></h4>
-                        <time data-modal-date></time>
-                        <div data-modal-text>
-                            <p>
-                                TODO
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+          </div>
         </article>
 
         <!-- #RESUME -->
         <article class="resume" data-page="resume">
-            <header>
-                <h2 class="h2 article-title">Resume</h2>
-            </header>
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-            <section class="timeline">
-                <div class="title-wrapper">
-                    <div class="icon-box">
-                        <ion-icon name="school-outline"></ion-icon>
-                    </div>
-                    <h3 class="h3">Education</h3>
-                </div>
-                <ol class="timeline-list">
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            Postgraduate, Technology and security of blockchain and smart contracts
-                        </h4>
-                        <span>Apr 2022 — Feb 2023</span>
-                        <p class="timeline-text">
-                            Institution: Anhanguera Educacional
-                        </p>
-                    </li>
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            Master's degree, Computer Science
-                        </h4>
-                        <span>Jun 2019 — Aug 2021</span>
-                        <p class="timeline-text">
-                            Institution: PUCRS - Pontifícia Universidade Católica do Rio Grande do Sul
-                        </p>
-                    </li>
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            Postgraduate, Project Management
-                        </h4>
-                        <span>Jan 2017 - Apr 2019</span>
-                        <p class="timeline-text">
-                            Institution: UniCesumar - Centro Universitário de Maringá
-                        </p>
-                    </li>
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            Bachelor's degree, Computer Science
-                        </h4>
-                        <span>Jan 2009 - Apr 2014</span>
-                        <p class="timeline-text">
-                            Institution: PUCRS - Pontifícia Universidade Católica do Rio Grande do Sul
-                        </p>
-                    </li>
-                </ol>
-            </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="school-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Postgraduate, Technology and security of blockchain and smart
+                  contracts
+                </h4>
+                <span>Apr 2022 — Feb 2023</span>
+                <p class="timeline-text">Institution: Anhanguera Educacional</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Master's degree, Computer Science
+                </h4>
+                <span>Jun 2019 — Aug 2021</span>
+                <p class="timeline-text">
+                  Institution: PUCRS - Pontifícia Universidade Católica do Rio
+                  Grande do Sul
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Postgraduate, Project Management
+                </h4>
+                <span>Jan 2017 - Apr 2019</span>
+                <p class="timeline-text">
+                  Institution: UniCesumar - Centro Universitário de Maringá
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor's degree, Computer Science
+                </h4>
+                <span>Jan 2009 - Apr 2014</span>
+                <p class="timeline-text">
+                  Institution: PUCRS - Pontifícia Universidade Católica do Rio
+                  Grande do Sul
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            <section class="timeline">
-                <div class="title-wrapper">
-                    <div class="icon-box">
-                        <ion-icon name="business-outline"></ion-icon>
-                    </div>
-                    <h3 class="h3">Experience</h3>
-                </div>
-                <ol class="timeline-list">
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">CTO at Conceptu Protótipos & Sistemas</h4>
-                        <span>Dec 2016 - Present · 6 yrs 2 mos</span>
-                        <!--                        <p class="timeline-text">-->
-                        <!--                            TODO-->
-                        <!--                        </p>-->
-                    </li>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="business-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  CTO at Conceptu Protótipos & Sistemas
+                </h4>
+                <span>Dec 2016 - Present · 6 yrs 2 mos</span>
+                <!--                        <p class="timeline-text">-->
+                <!--                            TODO-->
+                <!--                        </p>-->
+              </li>
 
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">Co-founder and CTO at Máquina de Reservas</h4>
-                        <span>Jun 2015 - Dec 2016 · 1 yr 5 mos</span>
-                        <!--                        <p class="timeline-text">-->
-                        <!--                            TODO-->
-                        <!--                        </p>-->
-                    </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Co-founder and CTO at Máquina de Reservas
+                </h4>
+                <span>Jun 2015 - Dec 2016 · 1 yr 5 mos</span>
+                <!--                        <p class="timeline-text">-->
+                <!--                            TODO-->
+                <!--                        </p>-->
+              </li>
 
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">Co-founder and CTO at Opti</h4>
-                        <span>Jun 2013 - Jun 2015 · 2 yrs</span>
-                        <!--                        <p class="timeline-text">-->
-                        <!--                            TODO-->
-                        <!--                        </p>-->
-                    </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Co-founder and CTO at Opti
+                </h4>
+                <span>Jun 2013 - Jun 2015 · 2 yrs</span>
+                <!--                        <p class="timeline-text">-->
+                <!--                            TODO-->
+                <!--                        </p>-->
+              </li>
 
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">Software Engineer at Hewlett Packard</h4>
-                        <span>May 2010 - Jun 2014 · 4 yrs 2 mos</span>
-                        <!--                        <p class="timeline-text">-->
-                        <!--                            TODO-->
-                        <!--                        </p>-->
-                    </li>
-                </ol>
-            </section>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer at Hewlett Packard
+                </h4>
+                <span>May 2010 - Jun 2014 · 4 yrs 2 mos</span>
+                <!--                        <p class="timeline-text">-->
+                <!--                            TODO-->
+                <!--                        </p>-->
+              </li>
+            </ol>
+          </section>
 
-            <section class="timeline">
-                <div class="title-wrapper">
-                    <div class="icon-box">
-                        <ion-icon name="book-outline"></ion-icon>
-                    </div>
-                    <h3 class="h3">Licenses & certifications</h3>
-                </div>
-                <ol class="timeline-list">
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            Build REST APIs with Django REST Framework and Python
-                        </h4>
-                        <span>Issued in Jan 2023</span>
-                        <p class="timeline-text">
-                            Institution: Udemy -
-                            <a class="resume-link"
-                               href="https://www.udemy.com/certificate/UC-5b805fee-f562-49e2-9e68-0e707b8c7286/"
-                               target="_blank">
-                                View Certificate
-                            </a>
-                        </p>
-                    </li>
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            Build a Backend REST API with Python & Django - Advanced
-                        </h4>
-                        <span>Issued in Nov 2022</span>
-                        <p class="timeline-text">
-                            Institution: Udemy -
-                            <a class="resume-link"
-                               href="https://www.udemy.com/certificate/UC-798dc7e0-d35b-4a45-9058-b8b6442ec6f8/"
-                               target="_blank">
-                                View Certificate
-                            </a>
-                        </p>
-                    </li>
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            DevOps Deployment Automation with Terraform, AWS and Docker
-                        </h4>
-                        <span>Issued in Jul 2022</span>
-                        <p class="timeline-text">
-                            Institution: Udemy -
-                            <a class="resume-link"
-                               href="https://www.udemy.com/certificate/UC-c30e40a9-76af-4635-9d57-c0c25e9a8e0a/"
-                               target="_blank">
-                                View Certificate
-                            </a>
-                        </p>
-                    </li>
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            Docker and Kubernetes: The Complete Guide
-                        </h4>
-                        <span>Issued in Dec 2021</span>
-                        <p class="timeline-text">
-                            Institution: Udemy -
-                            <a class="resume-link"
-                               href="https://www.udemy.com/certificate/UC-e5e71f72-35fd-4656-979a-08e6c24b44be/"
-                               target="_blank">
-                                View Certificate
-                            </a>
-                        </p>
-                    </li>
-                </ol>
-            </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Licenses & certifications</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Build REST APIs with Django REST Framework and Python
+                </h4>
+                <span>Issued in Jan 2023</span>
+                <p class="timeline-text">
+                  Institution: Udemy -
+                  <a
+                    class="resume-link"
+                    href="https://www.udemy.com/certificate/UC-5b805fee-f562-49e2-9e68-0e707b8c7286/"
+                    target="_blank"
+                  >
+                    View Certificate
+                  </a>
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Build a Backend REST API with Python & Django - Advanced
+                </h4>
+                <span>Issued in Nov 2022</span>
+                <p class="timeline-text">
+                  Institution: Udemy -
+                  <a
+                    class="resume-link"
+                    href="https://www.udemy.com/certificate/UC-798dc7e0-d35b-4a45-9058-b8b6442ec6f8/"
+                    target="_blank"
+                  >
+                    View Certificate
+                  </a>
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  DevOps Deployment Automation with Terraform, AWS and Docker
+                </h4>
+                <span>Issued in Jul 2022</span>
+                <p class="timeline-text">
+                  Institution: Udemy -
+                  <a
+                    class="resume-link"
+                    href="https://www.udemy.com/certificate/UC-c30e40a9-76af-4635-9d57-c0c25e9a8e0a/"
+                    target="_blank"
+                  >
+                    View Certificate
+                  </a>
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Docker and Kubernetes: The Complete Guide
+                </h4>
+                <span>Issued in Dec 2021</span>
+                <p class="timeline-text">
+                  Institution: Udemy -
+                  <a
+                    class="resume-link"
+                    href="https://www.udemy.com/certificate/UC-e5e71f72-35fd-4656-979a-08e6c24b44be/"
+                    target="_blank"
+                  >
+                    View Certificate
+                  </a>
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            <section class="timeline">
-                <div class="title-wrapper">
-                    <div class="icon-box">
-                        <ion-icon name="bulb-outline"></ion-icon>
-                    </div>
-                    <h3 class="h3">Patents</h3>
-                </div>
-                <ol class="timeline-list">
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            Sistema E Método Para Processamento De Dados De Consumidor Em Rede Elétrica
-                        </h4>
-                        <span>Issued in Apr 16, 2019</span>
-                        <p class="timeline-text">
-                            Number BR-102018016250-0-A2
-                        </p>
-                    </li>
-                    <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">
-                            System And Method For Processing Consumer Data In Electrical Grids
-                        </h4>
-                        <span>Issued in Feb 14, 2019</span>
-                        <p class="timeline-text">
-                            Number US-2019-0049915-A1
-                        </p>
-                    </li>
-                </ol>
-            </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="bulb-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Patents</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sistema E Método Para Processamento De Dados De Consumidor Em
+                  Rede Elétrica
+                </h4>
+                <span>Issued in Apr 16, 2019</span>
+                <p class="timeline-text">Number BR-102018016250-0-A2</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  System And Method For Processing Consumer Data In Electrical
+                  Grids
+                </h4>
+                <span>Issued in Feb 14, 2019</span>
+                <p class="timeline-text">Number US-2019-0049915-A1</p>
+              </li>
+            </ol>
+          </section>
 
-            <!--
+          <!--
             <section class="skill">
                 <h3 class="h3 skills-title">My skills</h3>
                 <ul class="skills-list content-card">
@@ -657,14 +829,19 @@
             </section>
             -->
         </article>
-    </div>
-</main>
+      </div>
+    </main>
 
-<script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-<!-- ionicon link-->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <!-- ionicon link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

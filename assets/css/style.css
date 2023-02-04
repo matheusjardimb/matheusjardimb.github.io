@@ -460,7 +460,6 @@ main {
     font-size: 18px;
 }
 
-
 .social-item .social-link:hover {
     color: var(--light-gray);
 }
@@ -1258,7 +1257,6 @@ textarea.form-input::-webkit-resizer {
     background: var(--bg-gradient-jet);
 }
 
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -1286,7 +1284,6 @@ textarea.form-input::-webkit-resizer {
     }
 
 }
-
 
 /**
  * responsive larger than 580px screen

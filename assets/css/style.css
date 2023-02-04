@@ -111,6 +111,11 @@
 
 a {
     text-decoration: none;
+    color: var(--white-2);
+}
+
+a:hover, a:hover > ion-icon {
+    color: var(--orange-yellow-crayola);
 }
 
 li {
@@ -121,9 +126,9 @@ img, ion-icon, button, time, span {
     display: block;
 }
 
-ion-icon:hover {
-    color: var(--orange-yellow-crayola);
-}
+/*ion-icon:hover {*/
+/*    color: var(--orange-yellow-crayola);*/
+/*}*/
 
 button {
     font: inherit;
@@ -438,7 +443,7 @@ main {
 }
 
 .contact-info :is(.contact-link, time, address) {
-    color: var(--white-2);
+    /*color: var(--white-2);*/
     font-size: var(--fs-7);
 }
 
@@ -692,6 +697,11 @@ main {
     visibility: visible;
 }
 
+.modal-avatar-box img {
+    width: 80px;
+    padding: 5px;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -784,6 +794,7 @@ main {
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 
@@ -802,7 +813,6 @@ main {
     gap: 15px;
     margin: 0 -15px;
     padding: 25px;
-    padding-bottom: 25px;
     overflow-x: auto;
     scroll-behavior: smooth;
     overscroll-behavior-inline: contain;
@@ -1517,6 +1527,7 @@ textarea.form-input::-webkit-resizer {
         display: block;
         flex-grow: 1;
         width: 35px;
+        padding: 5px;
     }
 
     /* clients */
@@ -1649,6 +1660,7 @@ textarea.form-input::-webkit-resizer {
 
     .modal-avatar-box img {
         width: 80px;
+        padding: 5px;
     }
 
     /**

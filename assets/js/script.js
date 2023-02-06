@@ -1,4 +1,29 @@
 "use strict";
+// Update Age
+const year_in_sec = 60 * 60 * 24 * 365;
+const bday_day = 24;
+const bday_month = 6;
+const bday_hour = 15;
+const bday_year = 1991;
+const bday = new Date(bday_year, bday_month, bday_day, bday_hour);
+const ageElement = document.getElementById("age");
+
+function calculateAge(now, birthday) {
+  const ageDate = new Date(now - birthday);
+  return Math.abs(ageDate.getUTCFullYear() - 1970); // 1970 = epoch
+}
+
+function updateAge() {
+  const now = new Date();
+  const age_year = calculateAge(now, bday);
+  const prev_year = now.getFullYear() - 1;
+  const bday_prev_year = new Date(prev_year, bday_month, bday_day, bday_hour);
+  const dif_sec = Math.abs(now.getTime() - bday_prev_year.getTime()) / 1000;
+  const age_float = age_year + dif_sec / year_in_sec;
+  ageElement.innerHTML = `${age_float.toFixed(8)} y.o.`;
+}
+
+setInterval(updateAge, 1000);
 
 // element toggle function
 const elementToggleFunc = function (elem) {
@@ -93,7 +118,6 @@ const filterFunc = function (selectedValue) {
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
-
 for (const element of filterBtn) {
   element.addEventListener("click", function () {
     let selectedValue = this.innerText.toLowerCase();

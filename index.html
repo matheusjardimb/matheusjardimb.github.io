@@ -8,9 +8,11 @@
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
+
       function gtag() {
         dataLayer.push(arguments);
       }
+
       gtag("js", new Date());
       gtag("config", "G-107D90V5HV");
     </script>
@@ -55,6 +57,7 @@
     <link rel="manifest" href="assets/images/site.webmanifest" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/snackbar.css" />
 
     <!-- Google Font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -91,29 +94,33 @@
         <div class="sidebar-info_more">
           <div class="separator"></div>
           <ul class="contacts-list">
-            <li class="contact-item">
+            <li
+              class="contact-item"
+              title="matheusjardimb@gmail.com"
+              onclick="copy_to_clipboard(this.title)"
+            >
               <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
+                <ion-icon
+                  title="Copy to clipboard"
+                  name="mail-outline"
+                ></ion-icon>
               </div>
               <div class="contact-info">
                 <p class="contact-title">Email</p>
-                <a
-                  href="mailto:matheusjardimb@gmail.com"
-                  title="matheusjardimb@gmail.com"
-                  class="contact-link"
-                  >matheusjardimb@gmail.com</a
-                >
+                <a class="contact-link">matheusjardimb@gmail.com</a>
               </div>
             </li>
-            <li class="contact-item">
+            <li
+              class="contact-item"
+              title="+55 (51) 99223-7820"
+              onclick="copy_to_clipboard(this.title)"
+            >
               <div class="icon-box">
                 <ion-icon name="phone-portrait-outline"></ion-icon>
               </div>
               <div class="contact-info">
                 <p class="contact-title">Phone</p>
-                <a href="tel:+5551992237820" class="contact-link"
-                  >+55 (51) 99223-7820</a
-                >
+                <a class="contact-link">+55 (51) 99223-7820</a>
               </div>
             </li>
             <li class="contact-item">
@@ -800,53 +807,56 @@
           </section>
 
           <!--
-            <section class="skill">
-                <h3 class="h3 skills-title">My skills</h3>
-                <ul class="skills-list content-card">
-                    <li class="skills-item">
-                        <div class="title-wrapper">
-                            <h5 class="h5">Web design</h5>
-                            <data value="80">80%</data>
-                        </div>
-                        <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 80%;"></div>
-                        </div>
-                    </li>
-                    <li class="skills-item">
-                        <div class="title-wrapper">
-                            <h5 class="h5">Graphic design</h5>
-                            <data value="70">70%</data>
-                        </div>
-                        <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 70%;"></div>
-                        </div>
-                    </li>
-                    <li class="skills-item">
-                        <div class="title-wrapper">
-                            <h5 class="h5">Branding</h5>
-                            <data value="90">90%</data>
-                        </div>
-                        <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 90%;"></div>
-                        </div>
-                    </li>
-                    <li class="skills-item">
-                        <div class="title-wrapper">
-                            <h5 class="h5">WordPress</h5>
-                            <data value="50">50%</data>
-                        </div>
-                        <div class="skill-progress-bg">
-                            <div class="skill-progress-fill" style="width: 50%;"></div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            -->
+              <section class="skill">
+                  <h3 class="h3 skills-title">My skills</h3>
+                  <ul class="skills-list content-card">
+                      <li class="skills-item">
+                          <div class="title-wrapper">
+                              <h5 class="h5">Web design</h5>
+                              <data value="80">80%</data>
+                          </div>
+                          <div class="skill-progress-bg">
+                              <div class="skill-progress-fill" style="width: 80%;"></div>
+                          </div>
+                      </li>
+                      <li class="skills-item">
+                          <div class="title-wrapper">
+                              <h5 class="h5">Graphic design</h5>
+                              <data value="70">70%</data>
+                          </div>
+                          <div class="skill-progress-bg">
+                              <div class="skill-progress-fill" style="width: 70%;"></div>
+                          </div>
+                      </li>
+                      <li class="skills-item">
+                          <div class="title-wrapper">
+                              <h5 class="h5">Branding</h5>
+                              <data value="90">90%</data>
+                          </div>
+                          <div class="skill-progress-bg">
+                              <div class="skill-progress-fill" style="width: 90%;"></div>
+                          </div>
+                      </li>
+                      <li class="skills-item">
+                          <div class="title-wrapper">
+                              <h5 class="h5">WordPress</h5>
+                              <data value="50">50%</data>
+                          </div>
+                          <div class="skill-progress-bg">
+                              <div class="skill-progress-fill" style="width: 50%;"></div>
+                          </div>
+                      </li>
+                  </ul>
+              </section>
+              -->
         </article>
       </div>
     </main>
 
+    <div id="snackbar"></div>
+
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/snackbar.js"></script>
 
     <!-- ionicon link-->
     <script

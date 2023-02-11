@@ -1,4 +1,11 @@
 "use strict";
+
+// Copy to clipboard
+function copy_to_clipboard(text) {
+  navigator.clipboard.writeText(text);
+  show_snackbar(`"${text}" copied to clipboard!`);
+}
+
 // Update Age
 const year_in_sec = 60 * 60 * 24 * 365;
 const bday_day = 24;

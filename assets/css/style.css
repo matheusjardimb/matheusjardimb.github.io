@@ -134,6 +134,10 @@ span {
   display: block;
 }
 
+ion-icon {
+  pointer-events: none;
+}
+
 button {
   font: inherit;
   background: none;

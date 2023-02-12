@@ -15,3 +15,4 @@ jobs:
           budgetPath: '.github/lighthouse/budget.json'
           uploadArtifacts: true
           temporaryPublicStorage: true
+          configPath: '.github/lighthouse/lighthouserc-static-dist-dir.yml'

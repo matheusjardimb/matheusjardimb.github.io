@@ -2,12 +2,13 @@ name: Lighthouse CI
 
 on: [ pull_request ]
 
+#- run: npm install
+
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v9
         with:

@@ -2,8 +2,6 @@ name: Lighthouse CI
 
 on: [ pull_request ]
 
-#- run: npm install
-
 jobs:
   lighthouse:
     runs-on: ubuntu-latest

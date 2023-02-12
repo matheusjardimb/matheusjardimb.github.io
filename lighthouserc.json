@@ -1,0 +1,11 @@
+{
+  "ci": {
+    "url": [
+      "http://localhost/",
+      "http://localhost/posts/"
+    ],
+    "collect": {
+      "staticDistDir": "."
+    }
+  }
+}

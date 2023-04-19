@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 
 // Copy to clipboard
 function copy_to_clipboard(text) {

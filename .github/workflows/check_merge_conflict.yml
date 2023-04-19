@@ -1,6 +1,6 @@
 name: Verify unwanted versioned conflicts
 
-on: [ pull_request ]
+on: [pull_request]
 
 jobs:
   merge_conflict_job:

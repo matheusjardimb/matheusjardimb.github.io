@@ -1,6 +1,6 @@
 name: Lighthouse CI
 
-on: [ pull_request ]
+on: [pull_request]
 
 jobs:
   lighthouse:
@@ -10,8 +10,8 @@ jobs:
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v9
         with:
-          urls: 'https://matheusjardimb.com/'
-          budgetPath: '.github/lighthouse/budget.json'
+          urls: "https://matheusjardimb.com/"
+          budgetPath: ".github/lighthouse/budget.json"
           uploadArtifacts: true
           temporaryPublicStorage: true
-          configPath: '.github/lighthouse/lighthouserc-static-dist-dir.yml'
+          configPath: ".github/lighthouse/lighthouserc-static-dist-dir.yml"

@@ -1,6 +1,6 @@
 name: Lint HTML, CSS and JS files
 
-on: [ pull_request ]
+on: [pull_request]
 
 env:
   FORCE_COLOR: 2
@@ -24,4 +24,3 @@ jobs:
 
       - name: Lint multiple file extensions
         run: npx prettier --check "**/*.{html,css,js,md,yml,json}"
-

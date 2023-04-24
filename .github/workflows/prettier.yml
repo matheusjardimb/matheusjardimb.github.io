@@ -23,4 +23,4 @@ jobs:
         run: npm install --dev
 
       - name: Lint multiple file extensions
-        run: npx prettier --check "**/*.{html,css,js,md,yml,json}"
+        run: ./.husky/prettier.sh

@@ -11,8 +11,7 @@ on:
 jobs:
   dependency_check_job:
     runs-on: ubuntu-latest
-    name: Find merge conflicts
+    name: Check for dependencies without specific version
     steps:
       - uses: actions/checkout@v3
-      - name: Check for dependencies without specific version
-        uses: matheusjardimb/js-exact-dependency-action@latest
+      - uses: matheusjardimb/dependencies-checker@latest

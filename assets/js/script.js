@@ -26,7 +26,7 @@ function updateAge() {
   const prev_year = now.getFullYear() - 1;
   const bday_prev_year = new Date(prev_year, bday_month, bday_day, bday_hour);
   const dif_sec = Math.abs(now.getTime() - bday_prev_year.getTime()) / 1000;
-  const age_float = age_year + dif_sec / year_in_sec;
+  const age_float = age_year + dif_sec / year_in_sec - 1;
   ageElement.innerHTML = `${age_float.toFixed(8)} y.o.`;
 }
 

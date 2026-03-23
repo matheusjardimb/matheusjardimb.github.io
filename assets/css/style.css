@@ -850,6 +850,11 @@ main {
   line-height: 1.6;
 }
 
+#professor-period,
+#cto-period {
+  display: inline;
+}
+
 .timeline-item:not(:last-child)::before {
   content: "";
   position: absolute;

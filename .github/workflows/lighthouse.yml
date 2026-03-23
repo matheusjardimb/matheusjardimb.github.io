@@ -6,12 +6,14 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v9
+        uses: treosh/lighthouse-ci-action@v11
         with:
           urls: "https://matheusjardimb.com/"
           budgetPath: ".github/lighthouse/budget.json"
           uploadArtifacts: true
           temporaryPublicStorage: true
           configPath: ".github/lighthouse/lighthouserc-static-dist-dir.yml"
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.GITHUB_TOKEN }}

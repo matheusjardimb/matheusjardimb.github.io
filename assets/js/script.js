@@ -40,13 +40,16 @@ function calculatePeriod(startDate) {
   const years = Math.floor(diffDays / 365);
   const months = Math.floor((diffDays % 365) / 30);
   
-  if (years > 0 && months > 0) {
-    return `${years} yr${years > 1 ? 's' : ''} ${months} mo${months > 1 ? 's' : ''}`;
-  } else if (years > 0) {
-    return `${years} yr${years > 1 ? 's' : ''}`;
-  } else {
-    return `${months} mo${months > 1 ? 's' : ''}`;
+  let result = '';
+  if (years > 0) {
+    result += `${years} yr${years > 1 ? 's' : ''}`;
   }
+  if (months > 0) {
+    if (result) result += ' ';
+    result += `${months} mo${months > 1 ? 's' : ''}`;
+  }
+  
+  return result || '0 mos';
 }
 
 function updateWorkPeriods() {

@@ -36,30 +36,30 @@ function calculatePeriod(startDate) {
   const start = new Date(startDate);
   const diffTime = Math.abs(now - start);
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-  
+
   const years = Math.floor(diffDays / 365);
   const months = Math.floor((diffDays % 365) / 30);
-  
-  let result = '';
+
+  let result = "";
   if (years > 0) {
-    result += `${years} yr${years > 1 ? 's' : ''}`;
+    result += `${years} yr${years > 1 ? "s" : ""}`;
   }
   if (months > 0) {
-    if (result) result += ' ';
-    result += `${months} mo${months > 1 ? 's' : ''}`;
+    if (result) result += " ";
+    result += `${months} mo${months > 1 ? "s" : ""}`;
   }
-  
-  return result || '0 mos';
+
+  return result || "0 mos";
 }
 
 function updateWorkPeriods() {
   const professorElement = document.getElementById("professor-period");
   const ctoElement = document.getElementById("cto-period");
-  
+
   if (professorElement) {
     professorElement.innerHTML = calculatePeriod(new Date(2024, 1, 1)); // Feb 2024
   }
-  
+
   if (ctoElement) {
     ctoElement.innerHTML = calculatePeriod(new Date(2016, 11, 1)); // Dec 2016
   }
